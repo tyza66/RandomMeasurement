@@ -4,6 +4,7 @@ package org.example;
  * Author: tyza66
  * Date: 2023/8/8 13:46
  * Github: https://github.com/tyza66
+ * 测试目的：检查父类和子类的构造函数的执行顺序和重写和子类创建的顺序先后
  **/
 
 public class ParentClassSubclassWhoComesFirstAndWhoComesLater {
