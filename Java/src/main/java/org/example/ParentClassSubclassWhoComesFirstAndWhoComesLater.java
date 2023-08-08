@@ -15,7 +15,8 @@ public class ParentClassSubclassWhoComesFirstAndWhoComesLater {
 
 
 class Parent {
-    private String name = "parent";
+    //修改权限修饰符
+    String name = "parent";
 
     public Parent() {
         sayName();
@@ -23,11 +24,11 @@ class Parent {
     }
 
     public void sayName() {
-        System.out.println(name);
+        System.out.println("not "+name);
     }
 
     public void sqyWho() {
-        System.out.println("I am " + name);
+        System.out.println("I am not" + name);
     }
 
 }
@@ -40,11 +41,12 @@ class Child extends Parent {
         sqyWho();
     }
 
+    //给要获得的对象加上super
     public void sayName() {
-        System.out.println(name);
+        System.out.println(super.name);
     }
 
     public void sqyWho() {
-        System.out.println("I am " + name);
+        System.out.println("I am " + super.name);
     }
 }
